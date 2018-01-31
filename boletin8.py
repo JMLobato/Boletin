@@ -9,4 +9,4 @@ def calcular_coste(h,m,s,tarifa):
 def convertir_a_euros(h,m,s,tarifa):
 	cent=calcular_coste(h,m,s,tarifa)
 	total=(cent/100)%100
-	return
+	return total
