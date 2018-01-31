@@ -6,7 +6,6 @@ while cont != com:
 	segundos=int(input("¿Cuantas segundos duró? "))
 	minutos=int(input("¿Cuantas minutos duró? "))
 	horas=int(input("¿Cuantas horas duró? "))
-	print("La comunicación nº%d costó"%(cont+1),end=" ")
-	result=convertir_a_euros(horas,minutos,segundos,tarifa)
-	print(result)
+	euros,cent=convertir_a_euros(horas,minutos,segundos,tarifa)
+	print("La comunicación nº%d costó %d, %d"%((cont+1),euros,cent))
 	cont+=1
