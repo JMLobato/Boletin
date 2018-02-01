@@ -3,7 +3,7 @@ def pasar_a_segundos(h,m,s):
 	return total_seg
 
 def calcular_coste(h,m,s,tarifa):
-	total=((1/(pasar_a_segundos(h,m,s)))*100)*tarifa #si 1 euro son X segundos, el calculo en cent se realizará multiplicando esos segundos por 100
+	total=(pasar_a_segundos(h,m,s)*tarifa #si 1 euro son X segundos, el calculo en cent se realizará multiplicando esos segundos por 100
 	return total
 
 def convertir_a_euros(h,m,s,tarifa):

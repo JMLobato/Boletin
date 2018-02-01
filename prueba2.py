@@ -6,6 +6,7 @@ for linea in contenido:
 	if linea != "Tarifa 3":
 		tiempos=linea.strip("\n").split(":")
 		lista.append(tiempos)
-for tiempo in lista:
+print(lista)
+for tiempo in lista[1:]:
 	comunicacion=convertir_a_euros(tiempo[0],tiempo[1],tiempo[2],3)
 	print("Esta comunicacion ha costado %d euros y %d centimos"%(euros,cent))
